@@ -1,5 +1,5 @@
 // Atualize CACHE_VERSION ao publicar uma nova versão para renovar os arquivos offline.
-const CACHE_VERSION = 'hinario-digital-v20261019-01';
+const CACHE_VERSION = 'hinario-digital-v20261019-02';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_VERSION).then(cache => cache.addAll(FILES)).then(() => self.skipWaiting()));

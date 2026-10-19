@@ -25,3 +25,9 @@ Substitua `index.html` pela nova versão do hinário (mantendo a linha de regist
 ## Observação
 
 A transcrição textual dos cânticos foi extraída automaticamente dos PDFs e pode exigir revisão de títulos, estrofes e coros.
+
+## Versão no rodapé
+
+No arquivo `index.html`, procure por `id="app-version"` e altere apenas o texto `Versão 1.0.0` para a versão desejada. O rodapé aparece discretamente no fim de todas as telas, inclusive nas exportações HTML.
+
+Ao publicar qualquer alteração no GitHub Pages, atualize também `CACHE_VERSION` em `sw.js` para que os usuários do PWA recebam os novos arquivos.
